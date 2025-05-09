@@ -1675,12 +1675,11 @@ section,
 
 table {
   table-layout: auto;
-  width: auto;
+  width: 100%;
   border-collapse: collapse;
 }
 th, td {
   padding: 8px;
-  white-space: nowrap; /* Prevents text from wrapping */
  }
  tr td:last-child, tr th:last-child {
   text-align: right;
