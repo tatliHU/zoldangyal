@@ -1690,3 +1690,10 @@ tr th:nth-last-child(1):nth-child(n+3),
 tr th:nth-last-child(2):nth-child(n+2) {
   text-align: right;
  }
+
+.bi-check-circle-fill {
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--accent-color);
+}
