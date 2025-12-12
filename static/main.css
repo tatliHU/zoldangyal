@@ -1697,3 +1697,16 @@ tr th:nth-last-child(2):nth-child(n+2) {
   top: -3px;
   color: var(--accent-color);
 }
+
+.bottom-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #298300; /* green background */
+    color: white;
+    padding: 14px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 9999;
+}
