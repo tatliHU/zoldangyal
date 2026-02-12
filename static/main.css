@@ -1681,13 +1681,13 @@ table {
 th, td {
   padding: 8px;
  }
- tr td:last-child, tr th:last-child {
+ table:not(.leaderboard) tr td:last-child, tr th:last-child {
   text-align: right;
 }
-tr td:nth-last-child(1):nth-child(n+3),
-tr td:nth-last-child(2):nth-child(n+2),
-tr th:nth-last-child(1):nth-child(n+3),
-tr th:nth-last-child(2):nth-child(n+2) {
+table:not(.leaderboard) tr td:nth-last-child(1):nth-child(n+3),
+table:not(.leaderboard) tr td:nth-last-child(2):nth-child(n+2),
+table:not(.leaderboard) tr th:nth-last-child(1):nth-child(n+3),
+table:not(.leaderboard) tr th:nth-last-child(2):nth-child(n+2) {
   text-align: right;
  }
 
@@ -1709,4 +1709,16 @@ tr th:nth-last-child(2):nth-child(n+2) {
     font-size: 1.2rem;
     text-align: center;
     z-index: 9999;
+}
+
+.leaderboard th, .leaderboard td {
+  border: 1px solid rgba(41, 131, 0, 1);
+  padding: 8px;
+  text-align: left;
+  min-height: 25px;
+}
+
+.leaderboard th {
+  background-color: rgba(41, 131, 0, 0.8);
+  font-weight: normal;
 }
