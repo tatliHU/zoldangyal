@@ -1722,3 +1722,38 @@ table:not(.leaderboard) tr th:nth-last-child(2):nth-child(n+2) {
   background-color: rgba(41, 131, 0, 0.8);
   font-weight: normal;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+}
+
+.custom-button {
+  background-color: rgba(41, 131, 0, 1);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Hover effect to make it feel interactive */
+.custom-button:hover {
+  background-color: #298300;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active effect when clicked */
+.custom-button:active {
+  transform: translateY(0);
+}
